@@ -79,7 +79,9 @@ header {
 .logo-icon {
     width: 60px;
     height: 60px;
-    background-color: var(--primary-red);
+    /* 移除冲突的 background-color */
+    background: var(--primary-red) url("images/福州大学 校徽.png") no-repeat center;
+    background-size: cover; /* 确保图片覆盖整个区域 */
     color: white;
     border-radius: 50%;
     display: flex;
@@ -87,6 +89,9 @@ header {
     justify-content: center;
     font-size: 1.5rem;
     border: 2px solid var(--gold);
+    box-sizing: border-box;
+    overflow: hidden;
+    text-indent: -9999px;
 }
 
 .logo-text {
@@ -142,7 +147,7 @@ nav a:hover, nav a.active {
 
 /* 英雄区域 */
 .hero {
-    background: linear-gradient(rgba(102, 0, 0, 0.8), rgba(102, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background: linear-gradient(rgba(102, 0, 0, 0.8), rgba(102, 0, 0, 0.7)), url('images/beijing.jpg');
     background-size: cover;
     background-position: center;
     color: white;
