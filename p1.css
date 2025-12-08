@@ -20,7 +20,21 @@ body {
     background-color: var(--ivory);
     color: var(--dark-gray);
     line-height: 1.6;
+    /* 改进的背景设置 */
+    background-image: 
+        /* 半透明白色叠加层，透明度调整为0.85-0.9 */
+        linear-gradient(rgba(255, 255, 240, 0.68), rgba(255, 255, 240, 0.68)),
+        /* 背景图片 */
+        url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* 确保背景图片清晰 */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
 }
+
 
 .container {
     width: 100%;
